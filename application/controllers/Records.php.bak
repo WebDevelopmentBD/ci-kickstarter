@@ -1,0 +1,28 @@
+<?php
+class Records extends CI_Controller
+{
+	public function __construct(){
+		parent::__construct();
+		$this->load->model( 'db_model' );
+		$this->load->helper('url_helper');
+	}
+
+	public function index(){
+
+		$data['dataset'] = $this->db_model->cruds->{'system_users'};
+		$data['title'] = 'Dataset records';
+
+		$data['test'] = true;
+
+		$this->load->view('templates/header', $data);//Load header template i.e. include('../views/templates/header.php')
+
+		//Actual content of the requested URL i.e. include('../views/pages/records.php');
+		$this->load->view('pages/records', $data);
+		
+		$this->load->view('templates/footer', $data);//Load footer template i.e. include('../views/templates/footer.php')
+	}
+
+	public function view($slug = NULL){
+		$data['news_item'] = $this->db_model->records( $slug );
+	}
+}
