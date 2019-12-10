@@ -59,38 +59,39 @@ $route['page/(:any)'] = 'main/view/$1';
 
 
 /*********** USER DEFINED ROUTES *******************/
-$route['cp/dashboard']   = 'admin';
-$route['cp/userListing'] = 'admin/userListing';
-$route['cp/branchListing'] = 'admin/branchListing';
-$route['cp/customerListing'] = 'admin/customerListing';
-$route['cp/logout']      = 'admin/logout';
+$route['cp/dashboard']      = 'admin';
+$route['cp/userListing']    = 'admin/userListing';
+$route['cp/branchListing']  = 'admin/branchListing';
+$route['cp/customerListing']= 'admin/customerListing';
+$route['cp/logout']         = 'admin/logout';
 
-$route['cp/branchEdit/(:num)'] = 'admin/branchEdit/$1';
+$route['cp/branchEdit/(:num)']   = 'admin/branchEdit/$1';
 $route['cp/customerEdit/(:num)'] = 'admin/customerEdit/$1';
 
-$route['cp/userListing/(:num)'] = "admin/userListing/$1";
-$route['cp/addNew'] = "admin/addNew";
-$route['cp/addNewUser'] = "admin/addNewUser";
-$route['cp/editOld'] = "admin/editOld";
+$route['cp/addNew']         = "admin/addNew";
+$route['cp/addNewUser']     = "admin/addNewUser";
+$route['cp/editOld']        = "admin/editOld";
 $route['cp/editOld/(:num)'] = "admin/editOld/$1";
-$route['cp/editUser'] = "admin/editUser";
-$route['cp/deleteUser'] = "admin/deleteUser";
-$route['cp/profile'] = "admin/profile";
+$route['cp/editUser']       = "admin/editUser";
+$route['cp/deleteUser']     = "admin/deleteUser";
+$route['cp/userListing/(:num)'] = "admin/userListing/$1";
+
+$route['cp/profile']        = "admin/profile";
 $route['cp/profile/(:any)'] = "admin/profile/$1";
-$route['cp/profileUpdate'] = "admin/profileUpdate";
+$route['cp/profileUpdate']  = "admin/profileUpdate";
 $route['cp/profileUpdate/(:any)'] = "admin/profileUpdate/$1";
 
 $route['cp/loadChangePass'] = "admin/loadChangePass";
 $route['cp/changePassword'] = "admin/changePassword";
-$route['cp/changePassword/(:any)'] = "admin/changePassword/$1";
+$route['cp/changePassword/(:any)']  = "admin/changePassword/$1";
 $route['cp/pageNotFound']			= "admin/pageNotFound";
-$route['cp/checkEmailExists']  = "admin/checkEmailExists";
+$route['cp/checkEmailExists']   = "admin/checkEmailExists";
 $route['cp/login-history']		= "admin/loginHistoy";
-$route['cp/login-history/(:num)']		  = "admin/loginHistoy/$1";
+$route['cp/login-history/(:num)']		 = "admin/loginHistoy/$1";
 $route['cp/login-history/(:num)/(:num)'] = "admin/loginHistoy/$1/$2";
 
-$route['cp/login']   = 'login';
-$route['cp/loginMe'] = 'login/loginMe';
+$route['cp/login']          = 'login';
+$route['cp/loginMe']        = 'login/loginMe';
 $route['cp/forgotPassword'] = "login/forgotPassword";
 $route['cp/resetPasswordUser'] = "login/resetPasswordUser";
 $route['cp/resetPasswordConfirmUser'] = "login/resetPasswordConfirmUser";

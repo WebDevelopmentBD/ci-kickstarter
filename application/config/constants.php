@@ -91,17 +91,17 @@ define('ROLE_MANAGER',                         	2);
 define('ROLE_EMPLOYEE',                         3);
 define('SEGMENT',								2);
 
-define('SOFTWARE_NAME', 'Invoice Queue');
+define('SOFTWARE_NAME',     'Invoice Queue');
 define('SOFTWARE_VERSION', '1.1.0');
 
 /************************** EMAIL CONSTANTS *****************************/
-define('EMAIL_FROM',                            'Your from email');		// e.g. email@example.com
-define('EMAIL_BCC',                            	'Your bcc email');		// e.g. email@example.com
-define('FROM_NAME',                             'CIAS Admin System');	// Your system name
-define('EMAIL_PASS',                            'Your email password');	// Your email password
+define('EMAIL_FROM',                            'dum@localhost');		// e.g. email@example.com
+define('EMAIL_BCC',                            	NULL);		// e.g. email@example.com
+define('FROM_NAME',                             'Admin Panel');	// Your system name
+define('EMAIL_PASS',                            '');	// Your email password
 define('PROTOCOL',                             	'smtp');				// mail, sendmail, smtp
-define('SMTP_HOST',                             'Your smtp host');		// your smtp host e.g. smtp.gmail.com
+define('SMTP_HOST',                             '127.0.0.1');		// your smtp host e.g. smtp.gmail.com
 define('SMTP_PORT',                             '25');					// your smtp port e.g. 25, 587
-define('SMTP_USER',                             'Your smtp user');		// your smtp user
-define('SMTP_PASS',                             'Your smtp password');	// your smtp password
+define('SMTP_USER',                             '');		// your smtp user
+define('SMTP_PASS',                             '');	// your smtp password
 define('MAIL_PATH',                             '/usr/sbin/sendmail');
